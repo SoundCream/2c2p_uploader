@@ -1,0 +1,349 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Managers\\2C2P.FileUploader.Managers.csproj": {}
+  },
+  "projects": {
+    "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Helper\\2C2P.FileUploader.Helper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Helper\\2C2P.FileUploader.Helper.csproj",
+        "projectName": "2C2P.FileUploader.Helper",
+        "projectPath": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Helper\\2C2P.FileUploader.Helper.csproj",
+        "packagesPath": "C:\\Users\\Natthee's\\.nuget\\packages\\",
+        "outputPath": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Helper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Natthee's\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Interfaces\\2C2P.FileUploader.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Interfaces\\2C2P.FileUploader.Interfaces.csproj",
+        "projectName": "2C2P.FileUploader.Interfaces",
+        "projectPath": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Interfaces\\2C2P.FileUploader.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\Natthee's\\.nuget\\packages\\",
+        "outputPath": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Natthee's\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Models\\2C2P.FileUploader.Models.csproj": {
+                "projectPath": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Models\\2C2P.FileUploader.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Managers\\2C2P.FileUploader.Managers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Managers\\2C2P.FileUploader.Managers.csproj",
+        "projectName": "2C2P.FileUploader.Managers",
+        "projectPath": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Managers\\2C2P.FileUploader.Managers.csproj",
+        "packagesPath": "C:\\Users\\Natthee's\\.nuget\\packages\\",
+        "outputPath": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Managers\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Natthee's\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Helper\\2C2P.FileUploader.Helper.csproj": {
+                "projectPath": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Helper\\2C2P.FileUploader.Helper.csproj"
+              },
+              "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Interfaces\\2C2P.FileUploader.Interfaces.csproj": {
+                "projectPath": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Interfaces\\2C2P.FileUploader.Interfaces.csproj"
+              },
+              "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Mappers\\2C2P.FileUploader.Mappers.csproj": {
+                "projectPath": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Mappers\\2C2P.FileUploader.Mappers.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Mappers\\2C2P.FileUploader.Mappers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Mappers\\2C2P.FileUploader.Mappers.csproj",
+        "projectName": "2C2P.FileUploader.Mappers",
+        "projectPath": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Mappers\\2C2P.FileUploader.Mappers.csproj",
+        "packagesPath": "C:\\Users\\Natthee's\\.nuget\\packages\\",
+        "outputPath": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Mappers\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Natthee's\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Models\\2C2P.FileUploader.Models.csproj": {
+                "projectPath": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Models\\2C2P.FileUploader.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Models\\2C2P.FileUploader.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Models\\2C2P.FileUploader.Models.csproj",
+        "projectName": "2C2P.FileUploader.Models",
+        "projectPath": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Models\\2C2P.FileUploader.Models.csproj",
+        "packagesPath": "C:\\Users\\Natthee's\\.nuget\\packages\\",
+        "outputPath": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Natthee's\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Helper\\2C2P.FileUploader.Helper.csproj": {
+                "projectPath": "C:\\Arm\\Proj\\2C2P.TechnicalTest\\2C2P.FileUploader\\2C2P.FileUploader.Helper\\2C2P.FileUploader.Helper.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

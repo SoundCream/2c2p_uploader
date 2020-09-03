@@ -1,0 +1,13 @@
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Interfaces\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Interfaces.deps.json
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Interfaces\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Interfaces.dll
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Interfaces\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Interfaces.pdb
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Interfaces\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Interfaces.csprojAssemblyReference.cache
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Interfaces\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Interfaces.AssemblyInfoInputs.cache
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Interfaces\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Interfaces.AssemblyInfo.cs
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Interfaces\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Interfaces.dll
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Interfaces\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Interfaces.pdb
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Interfaces\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Models.dll
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Interfaces\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Models.pdb
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Interfaces\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Interfaces.csproj.CopyComplete
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Interfaces\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Helper.dll
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Interfaces\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Helper.pdb

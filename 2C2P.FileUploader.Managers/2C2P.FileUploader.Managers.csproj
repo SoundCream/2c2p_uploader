@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_2C2P.FileUploader.Managers</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\2C2P.FileUploader.Helper\2C2P.FileUploader.Helper.csproj" />
+    <ProjectReference Include="..\2C2P.FileUploader.Interfaces\2C2P.FileUploader.Interfaces.csproj" />
+    <ProjectReference Include="..\2C2P.FileUploader.Mappers\2C2P.FileUploader.Mappers.csproj" />
+  </ItemGroup>
+
+</Project>

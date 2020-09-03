@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<form action="api/Transactions"
+      enctype="multipart/form-data" onsubmit="AJAXSubmit(this);return false;"
+      method="post">
+    <dl>
+        <dt>
+            <label for="FileUpload_FormFile">File</label>
+        </dt>
+        <dd>
+            <input id="FileUpload_FormFile" type="file" accept=".csv, .xml"
+                   name="FileUpload.FormFile" />
+        </dd>
+    </dl>
+
+    <input class="btn" value="Upload" onclick="AJAXSubmit()" />
+
+    <div style="margin-top:15px">
+        <output name="result"></output>
+    </div>
+</form>
+
+
+<script>
+
+    function AJAXSubmit(oFormElement) {
+        debugger;
+        var oFormElement = document.getElementsByTagName("form")[0];
+        var resultElement = document.getElementsByName("result")[0];
+        const formData = new FormData(oFormElement);
+        console.log(formData);
+
+        //try {
+        //    const response = fetch(oFormElement.action, {
+        //        method: 'POST',
+        //        body: formData
+        //    }).then((response) => {
+        //                    if (response.ok) {
+        //        //window.location.href = '/';
+        //        alert("Ok");
+        //    }
+
+        //    resultElement.value = 'Result: ' + response.status + ' ' +
+        //        response.statusText;
+        //    });
+
+
+        //} catch (error) {
+        //    console.error('Error:', error);
+        //}
+    }
+</script>

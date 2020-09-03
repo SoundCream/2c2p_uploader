@@ -1,0 +1,13 @@
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Mappers\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Mappers.deps.json
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Mappers\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Mappers.dll
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Mappers\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Mappers.pdb
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Mappers\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Mappers.csprojAssemblyReference.cache
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Mappers\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Mappers.AssemblyInfoInputs.cache
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Mappers\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Mappers.AssemblyInfo.cs
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Mappers\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Mappers.dll
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Mappers\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Mappers.pdb
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Mappers\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Models.dll
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Mappers\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Models.pdb
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Mappers\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Mappers.csproj.CopyComplete
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Mappers\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Helper.dll
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Mappers\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Helper.pdb

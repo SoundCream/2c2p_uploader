@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_2C2P.FileUploader.Repositories</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\2C2P.FileUploader.Data\2C2P.FileUploader.Data.csproj" />
+    <ProjectReference Include="..\2C2P.FileUploader.Interfaces\2C2P.FileUploader.Interfaces.csproj" />
+    <ProjectReference Include="..\2C2P.FileUploader.Models\2C2P.FileUploader.Models.csproj" />
+  </ItemGroup>
+
+</Project>

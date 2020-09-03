@@ -1,0 +1,11 @@
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Models\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Models.deps.json
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Models\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Models.dll
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Models\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Models.pdb
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Models\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Models.csprojAssemblyReference.cache
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Models\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Models.AssemblyInfoInputs.cache
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Models\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Models.AssemblyInfo.cs
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Models\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Models.dll
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Models\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Models.pdb
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Models\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Helper.dll
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Models\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Helper.pdb
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Models\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Models.csproj.CopyComplete

@@ -1,0 +1,17 @@
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Managers\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Managers.deps.json
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Managers\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Managers.dll
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Managers\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Managers.pdb
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Managers\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Managers.csprojAssemblyReference.cache
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Managers\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Managers.AssemblyInfoInputs.cache
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Managers\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Managers.AssemblyInfo.cs
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Managers\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Managers.dll
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Managers\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Managers.pdb
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Managers\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Interfaces.dll
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Managers\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Models.dll
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Managers\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Interfaces.pdb
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Managers\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Models.pdb
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Managers\obj\Debug\netcoreapp3.1\2C2P.FileUploader.Managers.csproj.CopyComplete
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Managers\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Helper.dll
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Managers\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Helper.pdb
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Managers\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Mappers.dll
+C:\Arm\Proj\2C2P.TechnicalTest\2C2P.FileUploader\2C2P.FileUploader.Managers\bin\Debug\netcoreapp3.1\2C2P.FileUploader.Mappers.pdb
