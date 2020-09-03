@@ -7,7 +7,7 @@ MS SqlServer
 
 ## Before Run a Project 
 1. Create Your database on MS sql server.
-2. Run sql script to create Tables & Initdata from \Resources\2C2PInitDatabase.sql
+2. Run sql script to create Tables & Init data from \Resources\2C2PInitDatabase.sql
 3. Change connectionstring on \2C2P.FileUploader\appsettings.json
 4. Run project "2C2P.FileUploader"
 5. Files for test on \Resources\test_files
