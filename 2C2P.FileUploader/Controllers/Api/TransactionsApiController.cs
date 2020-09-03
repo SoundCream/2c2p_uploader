@@ -37,11 +37,11 @@ namespace _2C2P.FileUploader.Controllers.Api
 
         [HttpGet]
         [SwaggerResponse((int)HttpStatusCode.OK, Type = typeof(List<TransactionDto>))]
-        public async Task<IActionResult> GetTransactions(string currentcy, string statusCode, string from, string to)
+        public async Task<IActionResult> GetTransactions(string currentcy, string statusCode, string fromDate, string toDate)
         {
             try
             {
-                var transactions = await _transactionManager.GetTransactions(currentcy, statusCode, from, to);
+                var transactions = await _transactionManager.GetTransactions(currentcy, statusCode, fromDate, toDate);
                 var result = _mapper.Map<List<TransactionDto>>(transactions);
                 return new JsonResult(result);
             }
