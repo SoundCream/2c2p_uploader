@@ -17,6 +17,9 @@ using Microsoft.Extensions.Logging;
 
 namespace _2C2P.FileUploader.Managers
 {
+    /// <summary>
+    /// TransactionManager
+    /// </summary>
     public class TransactionManager : ITransactionManager
     {
         private static string[] _statusCodeCollection = new string[] { "A", "R", "D" };
@@ -41,7 +44,13 @@ namespace _2C2P.FileUploader.Managers
             _transactionStatusRepository = transactionStatusRepository;
         }
 
-        public async Task<int> InsertUploadTransaction(List<TransactionUploadModel> transactionUploadModels)
+        /// <summary>
+        /// Insert Upload Transaction.
+        /// </summary>
+        /// <param name="transactionUploadModels"></param>
+        /// <param name="fileName"></param>
+        /// <returns></returns>
+        public async Task<int> InsertUploadTransaction(List<TransactionUploadModel> transactionUploadModels, string fileName)
         {
             try
             {
@@ -58,9 +67,18 @@ namespace _2C2P.FileUploader.Managers
                 {
                     var validateErrors = await ValidateTransactionUploadModel(recordNumber, transactionUploadModel);
                     errorMessages.AddRange(validateErrors);
-                    var transactionEntity = _mapper.Map<TransactionEntity>(transactionUploadModel);
-                    transactionEntity.StatusId = transactionStatus.FirstOrDefault(x => x.StatusCode == GetTransactionStatusCode(transactionUploadModel)).Id;
-                    _transactionRepository.InsertTransaction(transactionEntity);
+                    if (!validateErrors.Any())
+                    {
+                        _logger.LogInformation($"FileName:{fileName} record:{recordNumber} Validate Pass.");
+                        var transactionEntity = _mapper.Map<TransactionEntity>(transactionUploadModel);
+                        transactionEntity.StatusId = transactionStatus.FirstOrDefault(x => x.StatusCode == GetTransactionStatusCode(transactionUploadModel)).Id;
+                        _transactionRepository.InsertTransaction(transactionEntity);
+                    }
+                    else
+                    {
+                        _logger.LogInformation($"FileName:{fileName} record:{recordNumber} ValidateErrors: {GetValidateErrorToString(validateErrors)}");
+                    }
+
                     recordNumber++;
                 }
 
@@ -81,6 +99,15 @@ namespace _2C2P.FileUploader.Managers
             }
         }
 
+        /// <summary>
+        /// Get Transactions.
+        /// </summary>
+        /// <param name="currentcy"></param>
+        /// <param name="statusCode"></param>
+        /// <param name="from"></param>
+        /// <param name="to"></param>
+        /// <param name="dateFormat"></param>
+        /// <returns></returns>
         public async Task<List<TransactionEntity>> GetTransactions(string currentcy, string statusCode, string from, string to, string dateFormat = "yyyyMMdd")
         {
             var fromDate = default(DateTime?);
@@ -108,6 +135,11 @@ namespace _2C2P.FileUploader.Managers
 
             var result = await _transactionRepository.GetTransactionBySearchCriteria(currentcy, statusCode, fromDate, toDate);
             return result;
+        }
+
+        private string GetValidateErrorToString(List<string> errorCollection)
+        {
+            return string.Join(",", errorCollection);
         }
 
         private bool IsValidStatusCode(string statusCode)

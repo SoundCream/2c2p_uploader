@@ -4,57 +4,51 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
+<dl>
+    <dt>
+        <label for="FileUpload_FormFile">File</label>
+    </dt>
+    <dd>
+        <input id="FileUpload_FormFile" type="file" accept=".csv, .xml"
+               name="FileUpload.FormFile" />
+    </dd>
+</dl>
 
-<form action="api/Transactions"
-      enctype="multipart/form-data" onsubmit="AJAXSubmit(this);return false;"
-      method="post">
-    <dl>
-        <dt>
-            <label for="FileUpload_FormFile">File</label>
-        </dt>
-        <dd>
-            <input id="FileUpload_FormFile" type="file" accept=".csv, .xml"
-                   name="FileUpload.FormFile" />
-        </dd>
-    </dl>
+<button class="btn btn-primary" onclick="uploadFile()">Upload</button>
 
-    <input class="btn" value="Upload" onclick="AJAXSubmit()" />
-
-    <div style="margin-top:15px">
-        <output name="result"></output>
-    </div>
-</form>
+<div style="margin-top:15px">
+    <output id="result"></output>
+    <p id="error-detail"></p>
+</div>
 
 
 <script>
 
-    function AJAXSubmit(oFormElement) {
-        debugger;
-        var oFormElement = document.getElementsByTagName("form")[0];
-        var resultElement = document.getElementsByName("result")[0];
-        const formData = new FormData(oFormElement);
-        console.log(formData);
+    function uploadFile() {
+        var resultElement = document.getElementById("result");
+        var detailElement = document.getElementById("error-detail");
+        var formData = new FormData();
+        var file = $('#FileUpload_FormFile')[0].files[0];
+        formData.append('formFile', file);
 
-        //try {
-        //    const response = fetch(oFormElement.action, {
-        //        method: 'POST',
-        //        body: formData
-        //    }).then((response) => {
-        //                    if (response.ok) {
-        //        //window.location.href = '/';
-        //        alert("Ok");
-        //    }
-
-        //    resultElement.value = 'Result: ' + response.status + ' ' +
-        //        response.statusText;
-        //    });
-
-
-        //} catch (error) {
-        //    console.error('Error:', error);
-        //}
+        $.ajax({
+            url: '/api/Transactions',
+            type: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                console.log(response);
+                resultElement.value = 'Result : ' + response;
+                detailElement.innerText = '';
+            },
+            error: function (response) {
+                console.log(response);
+                resultElement.value = 'Result : ' + response.status;
+                detailElement.innerText = response.responseText;
+            }
+        });
     }
 </script>

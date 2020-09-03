@@ -14,6 +14,9 @@ using Microsoft.Extensions.Options;
 
 namespace _2C2P.FileUploader.Managers
 {
+    /// <summary>
+    /// FileUploadManager
+    /// </summary>
     public class FileUploadManager : IFileUploadManager
     {
         private const string CsvExtension = ".csv";
@@ -30,10 +33,18 @@ namespace _2C2P.FileUploader.Managers
             _appConfiguration = appConfiguration.Value;
         }
 
+        /// <summary>
+        /// Deserialize UploadFile Stream Transaction.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="stream"></param>
+        /// <param name="fileName"></param>
+        /// <returns></returns>
         public List<T> DeserializeStreamTransactionUploadFile<T>(Stream stream, string fileName) where T : class
         {
             try
             {
+                _logger.LogTrace($"Begin DeserializeStream file {fileName}");
                 var result = new List<T>();
                 ValidateFileUploadedSize(stream.Length);
                 var fileExtension = GetFileExtensionAllowed(fileName);
@@ -52,6 +63,7 @@ namespace _2C2P.FileUploader.Managers
                     throw new FileUploadErrorException($"File {fileExtension} not supported.");
                 }
 
+                _logger.LogTrace($"Complete DeserializeStream file {fileName}");
                 return result;
             }
             catch (FileUploadErrorException fuex)

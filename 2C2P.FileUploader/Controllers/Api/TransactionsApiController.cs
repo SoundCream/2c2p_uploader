@@ -47,10 +47,12 @@ namespace _2C2P.FileUploader.Controllers.Api
             }
             catch (ValidationErrorsException vex)
             {
+                _logger.LogError(vex.Message);
                 return HttpResponse(HttpStatusCode.BadRequest, vex.ErrorMessages);
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex.Message);
                 return HttpResponse(HttpStatusCode.InternalServerError, "InternalServerError");
             }
         }
@@ -63,21 +65,24 @@ namespace _2C2P.FileUploader.Controllers.Api
                 using (var stream = formFile.OpenReadStream())
                 {
                     var uploadTransactions = _fileUploadManager.DeserializeStreamTransactionUploadFile<TransactionUploadModel>(stream, formFile.FileName);
-                    await _transactionManager.InsertUploadTransaction(uploadTransactions);
+                    await _transactionManager.InsertUploadTransaction(uploadTransactions, formFile.FileName);
                 }
 
                 return HttpResponse(HttpStatusCode.OK, "Success");
             }
             catch (FileUploadErrorException fuex)
             {
+                _logger.LogError(fuex.Message);
                 return HttpResponse(HttpStatusCode.BadRequest, "Unknown format");
             }
             catch (ValidationErrorsException vex)
             {
+                _logger.LogError(vex.Message);
                 return HttpResponse(HttpStatusCode.BadRequest, vex.ErrorMessages);
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex.Message);
                 return HttpResponse(HttpStatusCode.InternalServerError, "InternalServerError");
             }
         }

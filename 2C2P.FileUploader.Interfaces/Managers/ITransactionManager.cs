@@ -9,6 +9,6 @@ namespace _2C2P.FileUploader.Interfaces.Managers
     {
         Task<List<TransactionEntity>> GetTransactions(string currentcy, string statusCode, string from, string to, string dateFormat = "yyyyMMdd");
 
-        Task<int> InsertUploadTransaction(List<TransactionUploadModel> transactionUploadModels);
+        Task<int> InsertUploadTransaction(List<TransactionUploadModel> transactionUploadModels, string fileName);
     }
 }

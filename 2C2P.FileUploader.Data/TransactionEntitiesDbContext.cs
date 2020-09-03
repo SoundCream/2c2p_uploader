@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using _2C2P.FileUploader.Models.Entities;
+﻿using _2C2P.FileUploader.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace _2C2P.FileUploader.Data

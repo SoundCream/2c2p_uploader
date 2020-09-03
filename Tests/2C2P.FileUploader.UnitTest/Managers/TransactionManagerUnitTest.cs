@@ -68,7 +68,7 @@ namespace _2C2P.FileUploader.UnitTest.Managers
             var transactionManager = AutoMockContainer.Create<TransactionManager>();
 
             // Act
-            transactionManager.InsertUploadTransaction(uploadTransactions).Wait();
+            transactionManager.InsertUploadTransaction(uploadTransactions, It.IsAny<string>()).Wait();
 
             // Assert
             AutoMockContainer.Mock<ITransactionRepository>()
@@ -118,7 +118,7 @@ namespace _2C2P.FileUploader.UnitTest.Managers
             var transactionManager = AutoMockContainer.Create<TransactionManager>();
 
             // Act
-            transactionManager.InsertUploadTransaction(uploadTransactions).Wait();
+            transactionManager.InsertUploadTransaction(uploadTransactions, It.IsAny<string>()).Wait();
 
             // Assert
             AutoMockContainer.Mock<ITransactionRepository>()

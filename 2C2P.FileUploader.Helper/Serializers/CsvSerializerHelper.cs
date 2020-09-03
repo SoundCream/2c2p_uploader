@@ -8,6 +8,13 @@ namespace _2C2P.FileUploader.Helper.Serializers
 {
     public class CsvSerializerHelper
     {
+        /// <summary>
+        /// Deserialize csv
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="row"></param>
+        /// <param name="returnValueSet"></param>
+        /// <returns></returns>
         public static T Deserialize<T>(string row, Func<string, string> returnValueSet = null) where T : class, new()
         {
             try
