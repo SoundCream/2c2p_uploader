@@ -16,9 +16,9 @@ namespace _2C2P.FileUploader.Extensions
 
         private static void Verify(AppConfiguration appConfiguration)
         {
-            if (string.IsNullOrWhiteSpace(appConfiguration.DateFormat))
+            if (string.IsNullOrWhiteSpace(appConfiguration.DateFormatForGetTransaction))
             {
-                throw new NullReferenceException($"{AppConfiguration.ConfigurataionName} DateFormat is missing value.");
+                throw new NullReferenceException($"{AppConfiguration.ConfigurataionName} DateFormatForGetTransaction is missing value.");
             }
 
             if (appConfiguration.MaximunFilesize < 1)

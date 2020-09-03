@@ -8,7 +8,7 @@ namespace _2C2P.FileUploader.Models.ConfigurationOptions
     {
         public const string ConfigurataionName = "FileUploaderAppSetting";
 
-        public string DateFormat { get; set; }
+        public string DateFormatForGetTransaction { get; set; }
 
         public int MaximunFilesize { get; set; }
 

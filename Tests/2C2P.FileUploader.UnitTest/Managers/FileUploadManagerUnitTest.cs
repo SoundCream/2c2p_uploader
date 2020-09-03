@@ -19,7 +19,7 @@ namespace _2C2P.FileUploader.UnitTest.Managers
             var defaultAppConfiguration = new AppConfiguration()
             {
                 AllowFileExtionsions = new string[] { ".csv", ".xml" },
-                DateFormat = "dd/MM/yyyy",
+                DateFormatForGetTransaction = "yyyyMMdd",
                 MaximunFilesize = 1048576
             };
 

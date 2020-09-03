@@ -4,12 +4,14 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using _2C2P.FileUploader.Interfaces.Managers;
+using _2C2P.FileUploader.Models.ConfigurationOptions;
 using _2C2P.FileUploader.Models.CustomExceptions;
 using _2C2P.FileUploader.Models.Dtos;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Swashbuckle.Swagger.Annotations;
 
 namespace _2C2P.FileUploader.Controllers.Api
@@ -20,17 +22,20 @@ namespace _2C2P.FileUploader.Controllers.Api
     {
         private readonly ILogger _logger;
         private readonly IMapper _mapper;
+        private readonly AppConfiguration _appConfiguration;
         private readonly ITransactionManager _transactionManager;
         private readonly IFileUploadManager _fileUploadManager;
 
         public TransactionsApiController(
             IMapper mapper,
+            IOptions<AppConfiguration> appConfiguration,
             ILogger<TransactionsApiController> logger,
             ITransactionManager transactionManager,
             IFileUploadManager fileUploadManager)
         {
             _logger = logger;
             _mapper = mapper;
+            _appConfiguration = appConfiguration.Value;
             _transactionManager = transactionManager;
             _fileUploadManager = fileUploadManager;
         }
@@ -41,7 +46,7 @@ namespace _2C2P.FileUploader.Controllers.Api
         {
             try
             {
-                var transactions = await _transactionManager.GetTransactions(currentcy, statusCode, fromDate, toDate);
+                var transactions = await _transactionManager.GetTransactions(currentcy, statusCode, fromDate, toDate, _appConfiguration.DateFormatForGetTransaction);
                 var result = _mapper.Map<List<TransactionDto>>(transactions);
                 return new JsonResult(result);
             }
