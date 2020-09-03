@@ -13,7 +13,7 @@ namespace _2C2P.FileUploader.Mappers.MapperProfile
         {
             CreateMap<TransactionUploadModel, TransactionEntity>()
                 .ForMember(x => x.Id, source => source.MapFrom(des => des.TransactionId))
-                .ForMember(x => x.Amount, source => source.MapFrom(des => des.Amount))
+                .ForMember(x => x.Amount, source => source.MapFrom(des => MapAmount(des)))
                 .ForMember(x => x.CurrencyCode, source => source.MapFrom(des => des.CurrencyCode))
                 .ForMember(x => x.TransactionDate, source => source.MapFrom(des => MapDate(des)))
                 .ForMember(x => x.CreatedDate, source => source.MapFrom(des => DateTime.Now))
@@ -23,6 +23,21 @@ namespace _2C2P.FileUploader.Mappers.MapperProfile
                 .ForMember(x => x.Id, source => source.MapFrom(des => des.Id))
                 .ForMember(x => x.Payment, source => source.MapFrom(des => $"{des.Amount.ToString("0.00")} {des.CurrencyCode}"))
                 .ForMember(x => x.Status, source => source.MapFrom(des => des.Status.StatusCode));
+        }
+
+        private decimal MapAmount(TransactionUploadModel transactionUploadModel)
+        {
+            var value = default(decimal);
+            if (transactionUploadModel.Source == UploadSourceEnum.Csv)
+            {
+                value = GlobalHelper.ParseDecimalNumber(transactionUploadModel.Amount);
+            }
+            else if (transactionUploadModel.Source == UploadSourceEnum.Xml)
+            {
+                value = decimal.Parse(transactionUploadModel.Amount);
+            }
+
+            return value;
         }
 
         private DateTime MapDate(TransactionUploadModel transactionUploadModel)

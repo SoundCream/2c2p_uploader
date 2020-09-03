@@ -21,11 +21,6 @@ namespace _2C2P.FileUploader.Extensions
                 throw new NullReferenceException($"{AppConfiguration.ConfigurataionName} DateFormat is missing value.");
             }
 
-            if (string.IsNullOrWhiteSpace(appConfiguration.DateFormatCulture))
-            {
-                throw new NullReferenceException($"{AppConfiguration.ConfigurataionName} DateFormatCulture is missing value.");
-            }
-
             if (appConfiguration.MaximunFilesize < 1)
             {
                 throw new NullReferenceException($"{AppConfiguration.ConfigurataionName} MaximunFilesize cannot less than 1 byte.");

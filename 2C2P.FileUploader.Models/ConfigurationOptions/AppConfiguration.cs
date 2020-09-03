@@ -10,8 +10,6 @@ namespace _2C2P.FileUploader.Models.ConfigurationOptions
 
         public string DateFormat { get; set; }
 
-        public string DateFormatCulture { get; set; }
-
         public int MaximunFilesize { get; set; }
 
         public string[] AllowFileExtionsions { get; set; }

@@ -9,6 +9,7 @@ using _2C2P.FileUploader.Models.ConfigurationOptions;
 using _2C2P.FileUploader.Models.CustomExceptions;
 using _2C2P.FileUploader.Models.Dtos;
 using AutoMapper;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
 namespace _2C2P.FileUploader.Managers
@@ -20,10 +21,12 @@ namespace _2C2P.FileUploader.Managers
 
         private readonly AppConfiguration _appConfiguration;
         private readonly IMapper _mapper;
+        private readonly ILogger _logger;
 
-        public FileUploadManager(IOptions<AppConfiguration> appConfiguration, IMapper mapper)
+        public FileUploadManager(IOptions<AppConfiguration> appConfiguration, ILogger<FileUploadManager> logger, IMapper mapper)
         {
             _mapper = mapper;
+            _logger = logger;
             _appConfiguration = appConfiguration.Value;
         }
 
@@ -61,7 +64,7 @@ namespace _2C2P.FileUploader.Managers
             }
         }
 
-        public List<T> CsvStreamDeserialize<T>(Stream stream) where T : class, new()
+        private List<T> CsvStreamDeserialize<T>(Stream stream) where T : class, new()
         {
             try
             {
@@ -84,7 +87,7 @@ namespace _2C2P.FileUploader.Managers
             }
         }
 
-        public T XmlStreamDeserialize<T>(Stream stream) where T : class
+        private T XmlStreamDeserialize<T>(Stream stream) where T : class
         {
             try
             {

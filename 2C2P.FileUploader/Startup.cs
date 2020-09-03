@@ -39,10 +39,10 @@ namespace _2C2P.FileUploader
             services.AddDbContext<TransactionEntitiesDbContext>(
                 options => options.UseSqlServer(Configuration.GetConnectionString("TransactionEntitiesConnection")));
 
-            services.AddScoped<IFileUploadManager, FileUploadManager>();
             services.AddScoped<IUnitOfWork, UnitOfWork<TransactionEntitiesDbContext>>();
             services.AddScoped<ITransactionStatusRepository, TransactionStatusRepository>();
             services.AddScoped<ITransactionRepository, TransactionRepository>();
+            services.AddScoped<IFileUploadManager, FileUploadManager>();
             services.AddScoped<ITransactionManager, TransactionManager>();
 
             services.AddAutoMapper(

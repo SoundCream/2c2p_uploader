@@ -10,7 +10,6 @@ namespace _2C2P.FileUploader.Data
     {
         public TransactionEntitiesDbContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
         {
-
         }
 
         public DbSet<TransactionEntity> Transactions { get; set;}
@@ -20,7 +19,6 @@ namespace _2C2P.FileUploader.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<TransactionEntity>().HasOne(entity => entity.Status).WithMany().HasForeignKey(x => x.StatusId);
-            //use this to configure the model
         }
     }
 }
